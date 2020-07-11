@@ -8,7 +8,7 @@
 * [Code Sandbox](https://codesandbox.io/s/github/Shubham-401n16/Hooks-API)
 * [Github Actions]
 * [PR](https://github.com/Shubham-401n16/Application-State-with-Redux/pull/1)
-* [Netlify App](https://priceless-shockley-b74e26.netlify.app)
+* [Netlify App](401redux-store.netlify.app)
 
 #### Documentation
 * [api docs](http://xyz.com/api-docs) (API servers)
