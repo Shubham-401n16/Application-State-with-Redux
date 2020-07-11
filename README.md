@@ -5,7 +5,7 @@
 ### Author: Shubham Majumdar
 
 ### Links and Resources
-* [Code Sandbox](https://codesandbox.io/s/github/Shubham-401n16/Hooks-API)
+* [Code Sandbox](https://codesandbox.io/s/github/Shubham-401n16/Application-State-with-Redux/tree/dev)
 * [Github Actions]
 * [PR](https://github.com/Shubham-401n16/Application-State-with-Redux/pull/1)
 * [Netlify App](https://401redux-store.netlify.app/)
