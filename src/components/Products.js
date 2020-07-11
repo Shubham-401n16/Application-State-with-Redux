@@ -20,21 +20,30 @@ function Products(props) {
     for (let i = 0; i < props.products.length; i++) {
         if (props.products[i].category === props.currentCategory)
             productsHTML.push(
-                <Card key={i} >
-                    <CardContent >
-                        <Typography >
-                            {props.products[i].name}
-                        </Typography>
-                        <Typography >
-                            ${props.products[i].price}
-                        </Typography>
-                        <Typography color="textSecondary">
-                            {props.products[i].description}
-                        </Typography>
-                    </CardContent>
-                    <CardActions >
-                        <Button size="small">Add to Cart</Button>
-                        <Button size="small" color="primary">View Details</Button>
+                <Card key={i}>
+                    <CardActionArea>
+                        <CardMedia
+                            className='product-media'
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                {props.products[i].name}
+                            </Typography>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                {props.products[i].price}
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                {props.products[i].description}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                        <Button size="small" color="primary">
+                            Add To Cart
+  </Button>
+                        <Button size="small" color="primary">
+                            View Details
+  </Button>
                     </CardActions>
                 </Card>
             );
@@ -43,10 +52,10 @@ function Products(props) {
 
 
     return (
-        <><div className ='main-product'>
+        <><div className='main-product'>
             <h2>Products</h2>
             {productsHTML}
-            </div>
+        </div>
         </>
     );
 }
