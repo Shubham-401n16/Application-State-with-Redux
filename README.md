@@ -1,13 +1,13 @@
-# Custom Hooks
+# Application State With Redux
 
-## Custom Hooks
+## Application State With Redux
 
 ### Author: Shubham Majumdar
 
 ### Links and Resources
 * [Code Sandbox](https://codesandbox.io/s/github/Shubham-401n16/Hooks-API)
 * [Github Actions]
-* [PR](https://github.com/Shubham-401n16/Context-API/pull/1)
+* [PR](https://github.com/Shubham-401n16/Application-State-with-Redux/pull/1)
 * [Netlify App](https://priceless-shockley-b74e26.netlify.app)
 
 #### Documentation
@@ -28,6 +28,8 @@
 * npm install react-router-dom
 * npm install react-bootstrap
 * npm install bootstrap
+* npm install react-redux redux
+* npm install @material-ui/core
 
   
 #### Tests
