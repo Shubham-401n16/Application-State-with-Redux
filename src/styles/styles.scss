@@ -48,6 +48,12 @@ header {
       }
   }
 
+  .main-product{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .main-div {
   padding-bottom: 60px;
   }

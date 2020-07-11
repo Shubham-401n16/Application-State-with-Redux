@@ -65,8 +65,9 @@ function Products(props) {
 
 
     return (
-        <><div className='main-product'>
-            <h2>Products</h2>
+        <>
+         <h2>Products</h2>
+        <div className='main-product'>    
             {productsHTML}
         </div>
         </>
