@@ -23,7 +23,7 @@ function Categories(props) {
             </Button>,
         );
 
-    return <>{categoriesHTML}</>;
+    return <><div className ='main-category'>{categoriesHTML}</div></>;
 }
 
 const mapStateToProps = (state) => {

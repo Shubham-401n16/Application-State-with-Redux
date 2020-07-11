@@ -11,6 +11,7 @@ import { createStore } from 'redux';
 
 const initState = {
     cart: 0,
+    total: 0,
     categories: [
         { name: 'electronics', displayName: 'Electronics' },
         { name: 'food', displayName: '' },
@@ -22,6 +23,7 @@ const initState = {
             stock: 5,
             price: 400,
             category: 'electronics',
+            selected: false,
         },
         {
             name: 'Macbook',
@@ -29,6 +31,7 @@ const initState = {
             stock: 7,
             price: 1200,
             category: 'electronics',
+            selected: false,
         },
         {
             name: 'Carrot',
@@ -36,6 +39,7 @@ const initState = {
             stock: 25,
             price: 0.3,
             category: 'food',
+            selected: false,
         },
         {
             name: 'Cake',
@@ -43,6 +47,7 @@ const initState = {
             stock: 10,
             price: 5,
             category: 'food',
+            selected: false,
         },
     ],
     currentCategory: 'food',
@@ -58,6 +63,8 @@ const reducer = (state = initState, action) => {
         // define our application's acceptable actions
 
         case 'ADD_TO_CART':
+            newState.cart = action.payload;
+            newState.total = action.payload;
             break;
         case 'CHANGE_CATEGORY':
             newState.currentCategory = action.payload;
