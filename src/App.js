@@ -17,8 +17,10 @@ function App() {
         <Provider store={store}>
             <div className='App'>
                 <Header />
+                <div className ='main-div'>
                 <Categories />
                 <Products />
+                </div>
                 <Footer />
             </div>
         </Provider>

@@ -20,15 +20,15 @@ function Products(props) {
     for (let i = 0; i < props.products.length; i++) {
         if (props.products[i].category === props.currentCategory)
             productsHTML.push(
-                <Card key={i} className="Card" >
+                <Card key={i} >
                     <CardContent >
-                        <Typography className="card-title" color="textSecondary" gutterBottom>
+                        <Typography >
                             {props.products[i].name}
                         </Typography>
                         <Typography >
                             ${props.products[i].price}
                         </Typography>
-                        <Typography color="textSecondary" component="p">
+                        <Typography color="textSecondary">
                             {props.products[i].description}
                         </Typography>
                     </CardContent>
