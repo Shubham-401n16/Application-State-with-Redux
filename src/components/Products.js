@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -8,6 +7,16 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+    root: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 140,
+    },
+  });
 
 function Products(props) {
     // list all the products that belong to the
@@ -15,15 +24,19 @@ function Products(props) {
 
     // only show the products that belong to the current category
 
+    const classes = useStyles();
+
     let productsHTML = [];
 
     for (let i = 0; i < props.products.length; i++) {
         if (props.products[i].category === props.currentCategory)
             productsHTML.push(
-                <Card key={i}>
+                <Card key={i} className={classes.root}>
                     <CardActionArea>
                         <CardMedia
-                            className='product-media'
+                            className={classes.media}
+                            image={props.products[i].img}
+                            title={props.products[i].name}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
@@ -40,10 +53,10 @@ function Products(props) {
                     <CardActions>
                         <Button size="small" color="primary">
                             Add To Cart
-  </Button>
+                        </Button>
                         <Button size="small" color="primary">
                             View Details
-  </Button>
+                        </Button>
                     </CardActions>
                 </Card>
             );

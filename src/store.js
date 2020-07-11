@@ -9,6 +9,7 @@
 
 import { createStore } from 'redux';
 
+
 const initState = {
     cart: 0,
     total: 0,
@@ -20,6 +21,7 @@ const initState = {
         {
             name: 'TV',
             description: 'See all the things',
+            img : 'https://images.unsplash.com/photo-1579894059380-1866b68bce6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
             stock: 5,
             price: 400,
             category: 'electronics',
@@ -28,6 +30,7 @@ const initState = {
         {
             name: 'Macbook',
             description: 'Do all the things',
+            img:'https://images.unsplash.com/photo-1522156373667-4c7234bbd804?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
             stock: 7,
             price: 1200,
             category: 'electronics',
@@ -36,6 +39,7 @@ const initState = {
         {
             name: 'Carrot',
             description: 'Crunch all the things',
+            img:'https://images.unsplash.com/photo-1522184216316-3c25379f9760?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
             stock: 25,
             price: 0.3,
             category: 'food',
@@ -44,6 +48,7 @@ const initState = {
         {
             name: 'Cake',
             description: 'Lie all the things',
+            img:'https://images.unsplash.com/photo-1516054575922-f0b8eeadec1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
             stock: 10,
             price: 5,
             category: 'food',
