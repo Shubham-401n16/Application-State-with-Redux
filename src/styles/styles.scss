@@ -24,11 +24,14 @@ header {
   footer {
     background-color:black;
     color:white;
-    width: 40;
     line-height: 4;
     margin: 0;
     padding: $spacing - 20;
     text-align: center;
+
+    h1{
+      align-items: flex-start;
+    }
 
     #external-account {
         flex-direction: row;
